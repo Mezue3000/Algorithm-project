@@ -1,0 +1,16 @@
+def calculate_sentence_length(sentence):
+    sentence_length = len(sentence)
+    
+    # Counting the number of words in the sentence
+    words = sentence.split()
+    word_count = len(words)
+    
+    return sentence_length, word_count
+
+
+# Example usage:
+input_sentence = input("Enter a sentence: ")
+length, word_count = calculate_sentence_length(input_sentence)
+
+print("Sentence length:", length)
+print("Number of words:", word_count)
